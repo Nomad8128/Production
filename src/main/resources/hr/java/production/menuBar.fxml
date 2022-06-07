@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Menu?>
+<?import javafx.scene.control.MenuBar?>
+<?import javafx.scene.control.MenuItem?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.RowConstraints?>
+
+<AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="hr.java.production.FirstScreenController">
+   <children>
+      <GridPane prefHeight="1000.0" prefWidth="1000.0">
+        <columnConstraints>
+          <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+          <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+        </columnConstraints>
+        <rowConstraints>
+          <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+          <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+          <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+        </rowConstraints>
+         <children>
+            <MenuBar GridPane.columnSpan="2" GridPane.valignment="TOP">
+              <menus>
+                <Menu mnemonicParsing="false" text="Category">
+                  <items>
+                    <MenuItem mnemonicParsing="false" onAction="#showCategorySearchScreen" text="Search" />
+                        <MenuItem mnemonicParsing="false" onAction="#showAddCategoryScreen" text="Add new category" />
+                  </items>
+                </Menu>
+                <Menu mnemonicParsing="false" text="Item">
+                  <items>
+                    <MenuItem mnemonicParsing="false" onAction="#showItemSearchScreen" text="Search" />
+                        <MenuItem mnemonicParsing="false" onAction="#showAddItemScreen" text="Add new item" />
+                  </items>
+                </Menu>
+                <Menu mnemonicParsing="false" text="Factory">
+                  <items>
+                    <MenuItem mnemonicParsing="false" onAction="#showFactorySearchScreen" text="Search" />
+                        <MenuItem mnemonicParsing="false" onAction="#showAddFactoryScreen" text="Add new factory" />
+                        <MenuItem mnemonicParsing="false" onAction="#showAddItemFactoryScreen" text="Add item to factory" />
+                        <MenuItem mnemonicParsing="false" onAction="#showAllItemsFactoryScreen" text="All items in a factory" />
+                  </items>
+                </Menu>
+                  <Menu mnemonicParsing="false" text="Store">
+                    <items>
+                      <MenuItem mnemonicParsing="false" onAction="#showStoreSearchScreen" text="Search" />
+                        <MenuItem mnemonicParsing="false" onAction="#showAddStoreScreen" text="Add new store" />
+                        <MenuItem mnemonicParsing="false" onAction="#showAddItemStoreScreen" text="Add new item" />
+                        <MenuItem mnemonicParsing="false" onAction="#showAllItemsStoreScreen" text="All items in a store" />
+                    </items>
+                  </Menu>
+                  <Menu mnemonicParsing="false" text="Address">
+                    <items>
+                      <MenuItem mnemonicParsing="false" onAction="#showAddressSearchScreen" text="Search" />
+                        <MenuItem mnemonicParsing="false" onAction="#showAddAddressScreen" text="Add new address" />
+                    </items>
+                  </Menu>
+              </menus>
+            </MenuBar>
+         </children>
+      </GridPane>
+   </children>
+</AnchorPane>
